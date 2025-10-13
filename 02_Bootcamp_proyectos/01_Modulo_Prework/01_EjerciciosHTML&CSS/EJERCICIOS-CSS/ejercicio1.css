@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.red{
+    color: red;
+    
+}
+.blue{
+    color: blue;
+    font-family: "Montserrat", sans-serif;
+}
+.orange{
+    color: rgb(253, 236, 9);
+    
+
+}
+.green{
+    color: rgb(26, 236, 26);
+    
+}
+h2,h1,p{
+    line-height: 2;
+    margin: 20px 0;
+}
+.estilo1{
+    font-size: smaller;
+    font-weight: normal;
+    
+
+}

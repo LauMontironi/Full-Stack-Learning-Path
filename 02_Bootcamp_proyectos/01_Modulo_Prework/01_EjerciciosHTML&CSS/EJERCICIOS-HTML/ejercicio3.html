@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <div>
+    <img width="35px" src="./test-svgrepo-com.svg" alt="imagen de formulario">
+    <h1>FORMULARIO DE REGISTRO</h1>
+    </div>
+    <section>
+        <h2>Completa el siguiente formulario:</h2>
+       
+        <form >
+        <fieldset>
+            
+            <legend><em>Datos Personales</em></legend>
+        <div>
+            <label for="name">Nombre y Apellido</label>
+            <input id="name"type="text" minlength="5" maxlength="20" required placeholder="Laura Montironi">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required pattern=.*@.@ placeholder="abc@abc.com">
+        </div>    
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" minlength="8" required>
+        </div>
+        <br>
+        <div>
+            <label id="birth"for="Birth">Fecha de Nacimiento</label>
+            <input id="birth" type="date" required>
+        </div>
+        <br>
+        <div>
+            <h5>Seleccione el Género:</h5>
+            <input id="masc"name="genero" type="radio" required>
+            <label for="masc">Masculino</label>
+            <input id="fem"name="genero" type="radio" required>
+            <label for="fem">Femenino</label>
+            <input id="otro"name="genero" type="radio" required>
+            <label for="otro">Otro</label>
+        </div>
+        <br>
+        <div>
+            <h5>Seleccione 3 o mas Hobbys</h5>
+            <input id="musica" name="hobbies" type="checkbox">
+            <label for="musica">Música</label>
+
+            <input id="arte" name="hobbies" type="checkbox">
+            <label for="arte">Arte</label>
+
+            <input id="literatura" name="hobbies" type="checkbox">
+            <label for="literatura">Literatura</label>
+
+            <input id="deportes" name="hobbies" type="checkbox">
+            <label for="deportes">Deportes</label>
+
+            <input id="cocina" name="hobbies" type="checkbox">
+            <label for="cocina">Cocina</label>
+
+            <input id="ciencia" name="hobbies" type="checkbox">
+            <label for="ciencia">Ciencia</label>
+
+            <input id="ia" name="hobbies" type="checkbox">
+            <label for="ia">IA</label>
+        </div>
+        <br>
+        <div>
+            <h5>Comentarios adicionales aqui:</h5>
+            <img width="30px"src="./down-arrow-svgrepo-com.svg" alt="flecha para abajo">
+            <br>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea name="comentarios" id="comentarios" placeholder="Deja tu mensaje aquí"></textarea>
+        </div>
+        <div>
+            <button type="submit">
+            SEND <img height="15px" width="25px" src="./send-message-envelope-fast-email-post-address-svgrepo-com.svg" alt="">
+            </button>
+           
+        </div>
+        </fieldset>
+        
+    </form>
+    </section>
+
+    
+    
+</body>
+</html>

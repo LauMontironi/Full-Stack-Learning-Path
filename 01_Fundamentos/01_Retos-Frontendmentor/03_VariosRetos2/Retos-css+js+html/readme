@@ -1,0 +1,46 @@
+✅ RETO 1: "Tarjetas de perfil interactivas"
+Objetivo: Mostrar 3 tarjetas de usuario en Grid.
+Al hacer clic en el botón "Ver más", aparece un Swal.fire() con una descripción, y cambia el estilo del texto de esa tarjeta (cambia color o tamaño con una clase).
+Cuando el mouse pasa por encima de la tarjeta, se agranda un poco (con :hover y transition).
+
+Requisitos:
+Las tarjetas deben estar en Grid (3 columnas en escritorio, 1 en móvil).
+
+Dentro de cada tarjeta, usar Flexbox para alinear la imagen, el nombre y el botón verticalmente.
+
+Al hacer clic en el botón:
+
+Mostrar un SweetAlert con una descripción.
+
+Aplicar o quitar una clase al texto (por ejemplo, color más oscuro o cambio de fuente).
+
+✅ RETO 2: "Menú de navegación interactivo"
+Objetivo: Crear un menú de navegación horizontal con Flexbox.
+Cuando el usuario hace click en un enlace del menú:
+
+Aparece una alerta de SweetAlert2 con el nombre de la sección.
+
+Se resalta (cambiando la clase con JS) el enlace activo (por ejemplo, con un subrayado o color distinto).
+
+Requisitos:
+Menú responsive (horizontal en grande, vertical en móvil con media query).
+
+Cada enlace debe tener un data-section="..." para que con JS puedas usarlo en la alerta.
+
+Cambiar la clase del enlace activo al hacer clic (y quitarla del anterior).
+
+✅ RETO 3: "Galería de imágenes con selector"
+Objetivo: Crear una pequeña galería en Grid con 6 imágenes.
+Encima de la galería hay 3 botones para filtrar por categorías (por ejemplo: "Todas", "Personas", "Paisajes").
+
+Funcionalidad:
+Al hacer clic en un botón:
+
+Mostrar una alerta (ej: "Filtrando: Personas").
+
+Ocultar las imágenes que no correspondan (agregando/removiendo una clase .oculto con display: none).
+
+Resaltar el botón activo (con clase .activo).
+
+Cuando pasas el mouse sobre una imagen, debe hacer zoom (:hover con transform: scale y transition).
+

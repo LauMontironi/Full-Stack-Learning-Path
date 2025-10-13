@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        #color{
+            background-color: blue;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <button popovertarget="pop-up">Suscribete</button>
+    <div popover id="pop-up">Gracias por suscribirte
+        <button popovertarget="pop-up" popovertargetaction="hide">cerrar</button>
+    </div>
+
+    <div>
+        <details>Esto es ptro ejemplo de pop up 
+            <summary>Click me!:)</summary>
+        </details>
+    </div>
+
+    <div id="color">Cambiame de Color</div>
+
+      <h1>Mi primer popup con JavaScript</h1>
+  <button id="abrir">Abrir popup</button>
+
+  <!-- Capa oscura de fondo -->
+  <div id="overlay"></div>
+
+  <!-- Popup -->
+  <div id="popup">
+    <p>¡Hola! Este es un popup ✨</p>
+    <button id="cerrar">Cerrar</button>
+  </div>
+
+    <script>
+    const colorAleatorio = document.getElementById('color');
+
+    function colorAleatoriob() {
+      let digitos = "0123456789ABCDEF";
+      let colors = "#";
+
+      for (let i = 0; i < 6; i++) {
+        let indiceAleatorio = Math.floor(Math.random() * 16);
+        colors += digitos[indiceAleatorio];
+      }
+
+      return colors;
+    }
+
+    colorAleatorio.addEventListener('click', function () {
+      let colorAleatorioA = colorAleatoriob();
+      colorAleatorio.style.backgroundColor = colorAleatorioA;
+    });
+    </script>
+</body>
+</html>

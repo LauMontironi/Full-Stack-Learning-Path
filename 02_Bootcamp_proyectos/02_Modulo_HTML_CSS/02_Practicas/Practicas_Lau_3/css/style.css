@@ -1,0 +1,227 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rancho:regular);
+@import url(https://fonts.googleapis.com/css?family=Michroma:regular)
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+@import url(./variables.css);
+
+header{
+    background-color: rgb(137, 170, 241);
+}
+
+
+.contenedor_1{
+    display: flex;
+    width: 50vw;
+
+}
+figure{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: "Rancho", sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+figure .icon-logo{
+    color:coral;
+    font-size: 2rem;
+    align-content: center;
+    text-align: center;
+    margin-right: 10px;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.search{
+    position: relative;
+    display: inline-block;
+
+}
+
+.search i{
+    position: absolute;
+    top:5px;
+    left:10px;
+    font-size: smaller;
+    color: var(--back);
+
+
+}
+
+.search input{
+  
+    background-color:var(--color);
+    color: var(--back);
+    border: none;
+    
+    border-radius: 4px;
+    width: 150px;
+    font-size: 1rem;
+    padding-left: 25px;
+}
+
+.contenedor_2{
+    
+    margin-top: 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.wrapp{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    padding: 10px 20px;
+    
+    
+}
+
+.btn1{
+    background-color: var(--back);
+    color: var(--color);
+    border: none;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.btn1:hover{
+    background-color: var(--color);
+    color: var(--back);
+    
+}
+.btn2:hover{
+        background-color: var(--back);
+        color: var(--color);
+
+}
+
+
+.btn2{
+    background-color: var(--color);
+    color: var(--back);
+    border: none;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contenedor_3{
+    height:30vw ;
+    background-image:url(../images/exhibicion-ceramica-tienda-otra-ceramica_865967-314332.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    
+    
+
+}
+
+.contenedor_3>* {
+    position: relative;
+    z-index: 2;
+    
+}
+    
+h1 h2{
+    text-shadow: 1px 1px 3px black;
+}
+
+.btn3{
+    background-color: dodgerblue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn3:hover{
+    color: black;
+    background-color: chocolate;
+    font-weight: bold;
+}
+
+
+
+.contenedor_3::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4)0%);
+    z-index: 1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 200;
+    border: 2px solid black;
+    background-color: var(--color);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.card img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+
+
+}
+
+.text{
+    font-family: "Michroma", sans-serif;
+    color:rgb(28, 28, 29) ;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.precio{
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.newarrivals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.titulo{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-family: "Michroma", sans-serif;
+}

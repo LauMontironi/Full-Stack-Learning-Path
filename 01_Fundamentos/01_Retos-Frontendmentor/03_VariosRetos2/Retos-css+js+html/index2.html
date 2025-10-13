@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ RETO 2: "Menú de navegación interactivo"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu-container">
+            <h1 class="menu-logo">Lau Montironi</h1>
+        
+
+        <ul class="menu-links">
+            <li class="menu-item">
+                <a href="#" id="home"class="menu-link">Home </a>
+            </li>
+
+                <li class="menu-item menu-item-show">
+                <a href="#" class="menu-link">About <img  width="20px" height="20px" src="./chevron-down-outline.svg" class="menu-arrow" alt=""> </a>
+                <ul class="menu-nesting">
+                    <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">About 1 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">About 2 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">About 3 </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-show">
+                <a href="#" class="menu-link">Projects <img width="20px" height="20px"src="./chevron-down-outline.svg" class="menu-arrow" alt=""></a>
+                <ul class="menu-nesting">
+                    <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Project 1 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Project 2 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Project 3 </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu-item menu-item-show">
+                <a href="#" class="menu-link">Extra <img width="20px" height="20px" src="./chevron-down-outline.svg" class="menu-arrow" alt=""></a>
+                <ul class="menu-nesting">
+                    <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Extra 1 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Extra 2 </a>
+                    </li>
+                     <li class="menu-inside">
+                        <a href="#" class="menu-link menu--inside">Extra 3 </a>
+                    </li>
+                </ul>
+            </li>
+
+
+             <li class="menu-item">
+                <button class="menu-link" popovertarget="popup">Contact </button>
+                <div popover id="popup">Gracias por contactar conmigo! puedes encontrarme en 📩 lau@gmaill.com 🏠 Balmes 587 Barcelona
+                    <button popovertarget="popup" popovertargetaction="hide">👋 nos vemos!</button>
+                </div>
+            </li>
+            
+
+
+
+
+
+        </ul>
+        <div class="menu-hamburguer">
+            <img src="./menu-outline.svg" class="menu-img">
+        </div>
+        </section>
+    </nav>
+
+    <main>
+  <button id="mostrar-popup">Mostrar mensaje</button>
+
+  <div id="popup-mensaje" class="oculto">
+    <p>¡Hola! Este es un mensaje centrado.</p>
+    <button id="cerrar-popup">Cerrar</button>
+  </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="./app1.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Semilla cafe</title>
+
+    <!--Para la fuente de google -->
+
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Courgette&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+<!--enganchamos el css-->
+
+<link rel="stylesheet" href="./practicas_lau.css">
+
+<!-- Para el Fav Icon -->
+
+<link rel="icon" href="./assets/coffee.png" type="image/png">
+</head>
+<body>
+    <header>
+<!--Barra de navegacion y menu principal-->
+        <figure class="logo">
+            <img class="imagen_logo" src="./assets/croissant.png" alt="Logo de la compañia">
+            <h1 class="nombre">La Semilla cafe</h1>
+        </figure>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#main" class="skip-link">Saltar al contenido</a>
+        
+          <ul class="navbar">
+            <li><a href="#" class="elemento">About</a></li>
+            <li><a href="#" class="elemento">Productos</a></li>
+            <li><a href="#" class="elemento">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+<!--Main contenido principal -->
+    
+        <!--seccion sobre nosotros-->
+        <article class="About">
+            <div class="sobre_nosotros">
+                <h2 class="titulo_1">Bienvenidos a La Semilla Cafe.</h2>
+                <p class="parrafo_1">Nuestra cafetería nació el <time datetime="2001-10-10"> 10 de octubre de 2001</time>inspirada en el origen ancestral del café, cuando los primeros granos fueron descubiertos en <strong>Etiopía</strong> y su aroma conquistó culturas enteras. Queríamos rescatar esa tradición y traerla a un espacio cercano, donde cada taza cuenta una historia. Desde nuestros inicios, nos propusimos ofrecer <em>café de especialidad</em> cuidadosamente seleccionado, acompañado de un ambiente cálido, artesanal y acogedor. <strong> <em> Aquí, lo importante no es solo la bebida, sino el momento: compartir, disfrutar y crear recuerdos </em></strong> alrededor de una mesa con el inconfundible aroma del café recién hecho.</p>
+            </div>
+        </article>
+
+         <!--seccion tabla con menues-->
+        <section class="tabla_menu">
+            <h3><strong>Menu a escoger</strong></h3>
+            <table>
+                <caption>Menu comida/Cena</caption>
+                <!--Columnas de la tabla -->
+                <thead>
+                    <tr>
+                        <th scope="col">Entrada</th>
+                        <th scope="col">Plato Principal </th>
+                        <th scope="col">Postre </th>
+                    </tr>
+                </thead>
+                <!--Filas de la tabla -->
+                <tbody>
+                    <tr>
+                        <td>Empanada criolla</td>
+                        <td>Milanesa Napolitana</td>
+                        <td>Chocotorta</td>
+                    </tr>
+                    <tr>
+                        <td>Provolone</td>
+                        <td>Lomito con papas fritas</td>
+                        <td>panqueques con dulce de leche</td>
+                    </tr>
+                    <tr>
+                        <td>Ensalada rusa</td>
+                        <td>Pizza de palmitos</td>
+                        <td>Flan con dulce de leche</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <!--Galeria de platos principales -->
+        <section class="galeria">
+            <figure>
+                <img src="./assets/Lomito.jpg" alt="Lomito">
+                <figcaption>Lomito argentino</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./assets/Milanesa_napo_patatas.jpg" alt="Milanesa">
+                <figcaption>Milanesa Napolitana con puré de patatas</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./assets/pizza_palmitos.jpg" alt="Pizza">
+                <figcaption>Pizza de Palmitos argentina con salsa golf</figcaption>
+            </figure>
+        </section>
+
+ <!--Formulario para reservas -->
+
+ <section class="formulario_reservas">
+     <legend>Datos para la reserva</legend>
+             <form action="/reservas" method="post">
+                <fieldset>
+
+                <label for="n_reserva" >Número de Reserva</label>
+                <input type="number" id="n_reserva" name="n_reserva" value="38" readonly>
+
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="escribe tu nombre" minlength="5">
+
+                <label for="apellido">apellido</label>
+                <input type="text" id="apellido" placeholder="escribe tu apellido" minlength="5">
+
+                <label for="numero_de_personas">Numero de personas</label>
+                <input type="number" id="numero_de_personas"required>
+
+                <label for="date">Fecha de la Reserva</label>
+                <input type="date" id="date">
+
+                <fieldset>
+                  <legend>Ubicación de la reserva</legend>
+                  <input type="radio" id="interior" name="ubicacion" value="Interior" required>
+                  <label for="interior">Interior</label>
+                  <input type="radio" id="exterior" name="ubicacion" value="Exterior">
+                  <label for="exterior">Exterior</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias / Alérgenos</legend>
+                    <input type="checkbox" id="mascota" name="mascota">
+                    <label for="mascota">Iré con mi mascota</label>
+
+                    <input type="checkbox" id="lactosa" name="lactosa">
+                    <label for="lactosa">Soy intolerante a la lactosa</label>
+
+                    <label for="alergias">Soy alérgico a:</label>
+                    <input type="text" id="alergias" name="alergias" placeholder="Escribe aquí">
+                </fieldset>
+
+                <select name="ciudad" id="ciudad">
+                    <option value= "" selected>Seleccione en qué ciudad quiere hacer la reserva</option>
+                    <option value="B">Barcelona</option>
+                    <option value="M">Madrid</option>
+                </select>
+
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+
+                <label for="telefono">Nº de teléfono</label>
+                <select name="prefijo" id="prefijo">
+                <option value="ES">+34</option>
+                <option value="AR">+54</option>
+                <option value="MX">+52</option>
+                <option value="IT">+39</option>
+
+                </select>
+                <input type="tel" id="telefono" name="telefono" placeholder="612345678" required>
+
+
+
+
+                <button type="submit">Reservar</button>
+
+
+            
+                </fieldset>
+            </form>
+        
+            
+
+    </section>
+
+    <section class="testimonios">
+        <h2>testimonios</h2>
+
+        <blockquote>
+            <p>“El café de esta cafetería es increíble, el ambiente es acogedor y siempre me hacen sentir como en casa.”</p>
+            <cite>— Laura M.</cite>
+        </blockquote>
+
+          <blockquote>
+             <p>
+             <q>Un lugar perfecto para trabajar y disfrutar de un buen espresso.</q>
+             </p>
+            <cite>— Carlos G.</cite>
+        </blockquote>
+
+        <blockquote>
+            <p><q>Tienen una amplia variedad de platos tanto para desayunos como comidas y es ideal para ir con niños y mascotas</q></p>
+            <cite>— Agustin Z.</cite>
+        </blockquote>
+
+    </section>
+    </main>
+
+        <aside>
+     <h2>Información práctica</h2>
+     <p><strong>Horario:</strong> Lunes a Viernes, 8:00 – 20:00</p>
+     <p><strong>Dirección:</strong> Calle Mayor 123, Madrid</p>
+     <p><strong>Teléfono:</strong> <a href="tel:+34910000000">+34 910 000 000</a></p>
+     <p><strong>Email:</strong> <a href="mailto:info@cafeteria.com">info@cafeteria.com</a></p>
+     <p><strong>Síguenos:</strong></p>
+    <ul>
+        <li><a href="https://facebook.com/cafeteria" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com/cafeteria" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/cafeteria" target="_blank">Twitter</a></li>
+    </ul>
+</aside>
+<footer>
+  <p>&copy; 2025 Cafetería Aroma. Todos los derechos reservados.</p>
+  <nav>
+    <ul>
+      <li><a href="/aviso-legal.html">Aviso Legal</a></li>
+      <li><a href="/politica-privacidad.html">Política de Privacidad</a></li>
+      <li><a href="/cookies.html">Política de Cookies</a></li>
+    </ul>
+  </nav>
+</footer>
+
+<script>var resultado = confirm("¿Estás seguro de que quieres continuar?");</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras </title>
+    <style>
+        .contenedor_principal{
+            background-color: cornflowerblue;
+            width: 500px;
+            height: 500px;
+            margin-top: 40px;
+        }
+
+        .producto{
+            width: 200px;
+
+        }
+        .btn{
+            background-color: darkcyan;
+            color: white;
+            border-radius: 999px;
+            padding: 10px;
+        }
+        #Lista{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de compras </h1>
+    <input id="Producto"type="text" class="producto"placeholder="Escribe lo que necesitas comprar">
+    <button id="agregar" class="btn">Agregar a mi lista</button>
+    <div class="contenedor_principal" id="contenido">
+        <ul id="Lista">
+            <li>Lista de super</li> <input type="checkbox" name="ok" id="ok">
+        </ul>
+       
+    </div>
+</body>
+
+<script>
+    const Producto= document.getElementById('Producto');
+    const agregar= document.getElementById('agregar');
+    const Lista =document.getElementById('Lista');
+
+    agregar.addEventListener('click', function(){
+        const texto= Producto.value;
+        if(texto !==""){
+           const nuevaLi= document.createElement("Li");
+           nuevaLi.textContent=texto;
+           Lista.appendChild(nuevaLi);
+           Producto.value="";
+
+
+        }
+    })
+
+
+
+</script>
+</html>

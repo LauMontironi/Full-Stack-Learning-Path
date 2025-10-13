@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        .titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .flex{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .flex1{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <img width="50px" src="./kitchen-pack-cook-svgrepo-com.svg" alt="Imagen de delantal">
+         <h1>Blog de Cocina</h1>
+         <img width="50px" src="./kitchen-pack-cooking-svgrepo-com.svg" alt="imagen de batidora">
+    </div>
+    <h2>
+        Descubre las mejores recetas para hacer en familia:
+    </h2>
+    
+    <header>
+        <nav>
+            <a href="#recetas-dulces">Recetas Dulces |</a>
+            <a href="#recetas-saladas">  Recetas Saladas |</a>
+            <a href="#recetas-sin-gluten">  Recetas Sin gluten |</a>
+            <a href="#recetas-veganas">  Recetas Veganas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="chocotorta">
+            <h2>Receta dulce del mes</h2>
+            <h3>Chocotorta</h3>
+            <p>Este es un pastel típico argentino muy sencillo de hacer.</p>
+            <p>Consiste en intercalar capas de galletitas <em>chocolinas</em> mojadas en leche o café , e intercalarlas con una mezcla hecha de Dulce de leche y queso mascarpone en partes iguales</p>
+            <img  width="100px" src="./chocotorta.jpg" alt="imagen de chocotorta">
+
+        </section>
+
+        <section id="Lomito">
+            <h2>Receta salada del mes</h2>
+            <h3>Lomito</h3>
+            <p>Para elaborar este plato solo se necesita apilar los ingredientes en este orden:</p>
+            <div class="flex">
+            <ol>
+                <li>Pan</li>
+                <li>Mayonesa</li>
+                <li>Tomate</li>
+                <li>carne</li>
+                <li>queso</li>
+                <li>lechuga</li>
+                <li>huevo</li>
+                <li>tomate</li>
+                <li>Mayonesa</li>
+                <li>pan</li>
+            </ol>
+            <img width="100px" src="./lomito.jpg" alt="imagen de lomito">
+            </div>
+            <p>Super simple de hacer, ideal para compartir en familia </p>
+
+           
+
+        </section>
+    </main>
+
+    <section>
+        <form >
+            <div class="flex1">
+                <img width="35px" src="./kirim-send-web-svgrepo-com.svg" alt="imagen de flecha roja">
+                
+                <h2><strong>Contactanos</strong></h2>
+                
+
+            </div>
+
+            <label id="name"for="name">Tu nombre:</label>
+            <input id="name" type="text" minlength="5" required>
+            <br>
+            <br>
+
+            <textarea name="mensaje" placeholder="Deja tu mensaje"></textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </section>
+<br>
+<br>
+<br>
+
+    <footer>
+         © 2025 Blog de Cocina de Lau- Todos los derechos reservados.
+         <br>
+         <a href="#">Visitanos en www.Lau.com para más info</a> 
+    </footer>
+<body>
+
+</body>
+</html>

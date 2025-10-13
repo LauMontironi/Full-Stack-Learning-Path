@@ -1,0 +1,55 @@
+
+
+*agregarle opacidad a las imagenes al pasar el mouse con hover y aplicar efecto al boton overlay y transition // luego intentar hacer una segunda seccion responsive sin bootstramp
+
+
+
+
+✅ Paso 5: Agrega overlay en hover en las imágenes de las cards (solo en la versión sin Bootstrap)
+Que al pasar el mouse sobre la imagen aparezca un fondo semitransparente con un ícono o texto.
+
+Usa position: absolute, z-index, transition, etc.
+
+✅ Paso 6: Agrega efectos visuales
+En los botones, crea efecto hover con transición de color o escala (transform: scale(1.05)).
+
+En los títulos, usa ::after para agregar una línea decorativa debajo.
+
+En las cards, usa ::before para un efecto decorativo sutil (como una sombra o bloque de color).
+
+✅ Paso 7: Agrega texto colapsable
+Usa el componente collapse de Bootstrap para crear una caja de texto que se abre y cierra al hacer click en un botón.
+
+Luego, intenta hacer una versión igual solo con JavaScript y CSS (sin Bootstrap).
+
+✅ Paso 8: Agrega interactividad con JavaScript
+Al hacer click en un botón de una card, que aparezca un alert() con el mensaje "Proyecto en desarrollo".
+
+Después:
+
+Reemplaza el alert() nativo por una alerta visual con SweetAlert (o Alert Awesome).
+
+🟣 Objetivo: comparar cómo se ve una alerta nativa vs una más atractiva.
+
+✅ Paso 9: Agrega una sección de contacto
+Usa flexbox o grid para diseñar un pequeño formulario de contacto.
+
+Incluye:
+
+Nombre
+
+Email
+
+Mensaje
+
+Botón enviar
+
+Al hacer click, que muestre una alerta de confirmación.
+
+✅ Paso 10: Haz todo responsive
+Usa media queries si lo haces sin Bootstrap.
+
+Revisa que cada sección se vea bien en móvil, tablet y escritorio.
+
+Prueba con el inspector del navegador y ajusta donde sea necesario.
+

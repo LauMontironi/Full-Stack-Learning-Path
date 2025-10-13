@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Nunito Sans";
+
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 202, 196);
+
+}
+
+#Recuadro{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    
+
+}
+.contenedor-principal {
+    background-image: url(./Pop-up/imagenes/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height:100% ;
+    min-width: 25vw;
+    padding: 30px;
+    image-rendering: auto;
+    
+}
+
+.contenedor-secundario {
+    width: 50vw;
+    height: 100vh;
+    min-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-around;
+}
+.contenedor-interior{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+
+
+
+}
+h4{
+    grid-area: span 2,3;
+}
+p{
+    grid-area: 2, -3;
+    justify-content: center;
+    align-content: center;
+    color: rgb(38, 41, 41);
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 3px solid blanchedalmond;
+    width: 50px;
+    
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row{
+    justify-self:  flex-end;
+    font-size: 24px;
+    color: #555;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.popup{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.popuptext{
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.popuptext.show {
+  visibility: visible;
+  opacity: 1;
+}

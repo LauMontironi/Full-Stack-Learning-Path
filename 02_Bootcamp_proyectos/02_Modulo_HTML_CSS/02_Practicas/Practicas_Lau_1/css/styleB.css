@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans",sans-serif;
+}
+
+.menu{
+    background-image: url(/HTML-CSS/Practicas_Lau/assets/tomando-te-con-postre.jpg);
+    border-radius: 30px;
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    color: black;
+    align-content: center;
+    margin-bottom: 20px;
+    
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    justify-items: center;
+    width: 100%;
+    padding: 10px;
+ 
+    /* centra las cards dentro de cada celda */
+}
+
+.carousel-item i.bi-star-fill {
+    color: gold;
+    /* Cambia a cualquier color que quieras */
+    margin-right: 2px;
+    /* Opcional, para separar las estrellas */
+}
+
+.carousel-item:hover i.bi-star-fill {
+    color: orange;
+}
+
+.card-img-top {
+    height: 200px;
+    /* altura fija */
+    object-fit: cover;
+    /* recorta la imagen para que encaje sin deformarse */
+}
+
+.mb-3{
+    margin-left: 20px;
+}
+
+.reserva{
+    margin-left: 20px;
+    font-family:"Outfit", sans-serif;
+}
+
+.btn-warning{
+    margin-left: 20px;
+
+}

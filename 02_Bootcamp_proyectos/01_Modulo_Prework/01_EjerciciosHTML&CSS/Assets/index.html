@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toggle">
+        <ion-icon id="icon-1"name="menu-outline" style="font-size: 1.6rem;"></ion-icon>
+        <ion-icon class="d-none" id="icon-2"name="close-outline"style="font-size: 1.6rem;"></ion-icon>
+    </div>
+
+<div class="sidebar">
+    <div class="logo">
+        <div class="logo-img">
+            <img style="width: 40px" src="./css/logo.svg" alt="">
+        </div>
+        <div class="logo-text d-none">
+            <span>LOGO</span>
+        </div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a id="home-red" class="d-flex align-center" href="">
+                    <span class="icon-menu"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text-menu">Home</span>
+                </a></li>
+                 <li>
+                <a id="about-green" class="d-flex align-center" href="">
+                    <span class="icon-menu"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text-menu">About</span>
+                </a></li>
+                 <li>
+                <a id= "contact-blue" class="d-flex align-center" href="">
+                    <span class="icon-menu"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="text-menu">Contact</span>
+                </a></li>
+                 <li>
+                <a  id="faq-yellow" class="d-flex align-center" href="">
+                     <span class="icon-menu"><ion-icon name="help-outline"></ion-icon></span>
+                    <span class="text-menu">FAQ</span>
+                </a></li>
+                 <li>
+                <a id="shop-lila" class="d-flex align-center" href="">
+                     <span class="icon-menu"><ion-icon name="bag-outline"></ion-icon></span>
+                    <span class="text-menu">Shop</span>
+                </a></li>
+
+        </ul>
+    </nav>
+
+    <ul class="nav-footer" style="padding-bottom: 2rem;">
+        <li style="margin-bottom: 1rem;">
+            <a class="d-flex align-center" href="">
+                <img class="img-profile" src="./foto.jpg" alt="">
+                <span class="text-menu">Laura</span>
+            </a>
+        </li>
+                <li>
+            <a class="d-flex align-center" href="">
+                <span class="icon-menu"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="text-menu">Log out </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+ <script src="./js/app.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

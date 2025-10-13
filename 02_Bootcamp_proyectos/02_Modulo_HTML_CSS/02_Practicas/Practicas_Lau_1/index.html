@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box {
+  margin: 10px 0;
+  border: 2px solid;
+  font-family: Arial;
+  font-size: 15px;
+  width: 200px;
+}
+
+.second {
+  border-color: red;
+}
+.first {
+  position: static;
+  border-color: #3b3bff;
+}
+
+.box {
+	border: 2px solid;
+	font-family: Arial;
+	font-size: 15px;
+	width: 500px;
+}
+
+.not-relative {
+	border-color: #00D1AE;
+}
+
+.relative {
+	position: relative;
+	border-color: #3B3BFF;
+	left: 10px;
+	top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="first box">
+	Primer elemento
+</div>
+
+<div class="second box">
+	Segundo elemento
+</div>
+
+<div class="not-relative box">
+	Este es el contenido del elemento con la clase .not-relative
+</div>
+
+<div class="relative box">
+	Este es el contenido del elemento con la clase .relative.
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nombre{
+    font-family:"Bitcount Single Ink", system-ui;
+    font-size: clamp(1.8rem, 10vw, 5rem);
+   
+}
+
+
+/* NAV-BAR */
+
+/* body{
+    background-color:#6b6b6b;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color:#d48c3b ;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    display: flex;
+    
+} 
+.imagen_logo{
+    max-width: 10rem;
+    height: auto;
+
+}
+
+.nav{
+    margin-top: 200px;
+    background-color: #333;
+
+    
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    text-align: center;
+    height: 50px;
+  
+}
+
+
+.navbar li a {
+  text-decoration: none;
+  color: #c0aeae;
+  padding: 0.5rem 0;
+  font-size:clamp(1rem, 2vw, 3em);
+  padding: 10px; 
+  
+}
+
+.navbar li a:hover{
+    border: 1px solid #64131333;
+    box-shadow: 18px 21px 32px 22px rgba(0,0,0,0.1);
+    background-color: #d48c3b;
+    color: darkslateblue;
+    font-size: clamp(1.2rem, 2.2vw, 3.2em);
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: yellow;
+  padding: 0.25rem 0.5rem;
+  
+}
+
+/* 
+/* ARTICULO */
+/* .About{
+    background-color: #d48c3b;
+    color: bisque;
+    border: 2px solid burlywood;
+    border-radius: 2%;
+    padding: 1em;
+    margin: 1px;
+
+}
+
+.sobre_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo_1{
+    margin: 10px;
+    color: #6b6b6b;
+    font-weight: bold;
+    
+}
+
+img { max-width: 100%; height: auto; display: block; }
+figure { margin: 0; } */ */ */ */
+
+/* 0. RESET + BOX-SIZING */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { margin: 0; line-height: 1.45; font-family: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--text); background: var(--bg); -webkit-font-smoothing:antialiased; }
+
+/* 1. VARIABLES (paleta y espaciado) */
+:root{
+  --bg: #fffaf4;
+  --card: #ffffff;
+  --primary: #7c4a2b;      /* color principal café */
+  --accent: #d48c3b;
+  --muted: #6b6b6b;
+  --text: #222222;
+  --radius: 12px;
+  --gap: 1rem;
+  --container-max: 1100px;
+  --focus-color: #2b8bd3;
+  --shadow-1: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* 2. UTILIDADES GENERALES */
+.container { width: 90%; max-width: var(--container-max); margin-inline: auto; }
+.row { display:flex; gap:var(--gap); flex-wrap:wrap; align-items:stretch; }
+img { max-width:100%; height:auto; display:block; }
+a { color:inherit; text-decoration:none; }
+
+/* 3. SKIP LINK (visibilidad para teclado) */
+.skip-link {
+  position: absolute; left: -9999px; top: auto; width:1px; height:1px; overflow:hidden;
+  z-index: 1000;
+}
+.skip-link:focus, .skip-link:active {
+  position: static; width: auto; height: auto; padding: .5rem .75rem; margin: .5rem 0;
+  background: var(--primary); color:#fff; border-radius:6px; box-shadow: var(--shadow-1);
+}
+
+/* 4. HEADER y NAV */
+header { padding: .9rem 0; background: linear-gradient(180deg, rgba(0,0,0,0.02), transparent); }
+header .container { display:flex; align-items:center; justify-content:space-between; gap: .75rem; }
+
+header figure { display:flex; align-items:center; gap:.6rem; margin:0; }
+header img { width:44px; height:auto; display:block; }
+header .nombre { font-size:1.25rem; margin:0; font-weight:700; color:var(--primary); letter-spacing:.2px; }
+
+/* NAV */
+nav[aria-label] { }
+nav ul { list-style: none; padding: 0; margin: 0; display:flex; gap:.5rem; align-items:center; }
+nav li { margin: 0; }
+nav a { display:inline-block; padding:.35rem .6rem; border-radius:8px; font-weight:600; color:var(--text); }
+nav a:hover, nav a:focus-visible { box-shadow: 0 0 0 4px rgba(43,139,211,0.08); outline: none; }
+
+/* Ajuste visual de los "pipes" si los dejas en texto */
+nav a.elemento { color: var(--muted); font-size:.95rem; }
+
+/* 5. MAIN LAYOUT (mobile-first) */
+main { padding: 1.25rem 0; }
+main > .container { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+
+/* 6. HERO / SOBRE NOSOTROS */
+.sobre_nosotros {
+  background: linear-gradient(180deg, rgba(244,236,229,.6), rgba(255,255,255,.4));
+  padding: 1rem; border-radius: var(--radius); box-shadow: var(--shadow-1);
+}
+.sobre_nosotros h2 { margin: 0 0 .5rem 0; font-size:1.25rem; color:var(--primary); }
+.sobre_nosotros p { margin: 0; color: var(--muted); }
+
+/* 7. TABLA (menú) - responsiva */
+.tabla_menu { width:100%; }
+.tabla_menu .table-wrapper { overflow-x:auto; border-radius:8px; }
+.tabla_menu table { width:100%; border-collapse: collapse; min-width:600px; background:var(--card); }
+.tabla_menu caption { text-align:left; padding:.6rem 1rem; font-weight:700; color:var(--primary); }
+.tabla_menu th, .tabla_menu td { padding:.75rem 1rem; border-bottom: 1px solid #f0eae5; text-align:left; vertical-align:middle; }
+.tabla_menu th { background: rgba(0,0,0,0.02); font-weight:700; }
+@media (max-width:599px){
+  .tabla_menu table { min-width:480px; } /* obliga al scroll horizontal en pantallas muy pequeñas */
+}
+
+/* 8. GALERÍA (grid flexible) */
+.galeria { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.galeria figure { background: var(--card); border-radius:8px; padding:.45rem; text-align:center; box-shadow: var(--shadow-1); }
+.galeria figcaption { margin-top:.4rem; color:var(--muted); font-size:.925rem; }
+
+/* 9. FORMULARIO: campos, fieldset y estados */
+.formulario_reservas fieldset { border: 1px solid #efe6dd; padding: .9rem; border-radius:10px; background: var(--card); margin: 0 0 1rem 0; }
+.formulario_reservas legend { font-weight:700; padding: 0 .5rem; color:var(--primary); }
+.formulario_reservas label { display:block; font-size:.95rem; margin: .5rem 0 .25rem; color:var(--text); }
+.formulario_reservas input[type="text"],
+.formulario_reservas input[type="email"],
+.formulario_reservas input[type="tel"],
+.formulario_reservas input[type="number"],
+.formulario_reservas input[type="date"],
+.formulario_reservas select,
+.formulario_reservas textarea {
+  width:100%; padding:.6rem .7rem; border:1px solid #e6dcd3; border-radius:8px; font-size:1rem; background:transparent;
+}
+.formulario_reservas input[type="radio"],
+.formulario_reservas input[type="checkbox"] { margin-right:.4rem; transform:translateY(2px); }
+
+/* focus y validación visual */
+.formulario_reservas input:focus, .formulario_reservas select:focus, .formulario_reservas textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(43,139,211,0.12);
+  border-color: var(--focus-color);
+}
+.formulario_reservas input:invalid { box-shadow: 0 0 0 4px rgba(217,83,79,0.08); border-color: #d9534f; }
+
+/* submit */
+.formulario_reservas button[type="submit"] {
+  display:inline-block; background: var(--primary); color:#fff; border:0; padding:.6rem 1rem; border-radius:10px;
+  font-weight:700; cursor:pointer; margin-top:.6rem;
+}
+.formulario_reservas button[type="submit"]:hover { filter:brightness(.98); }
+
+/* 10. TESTIMONIOS */
+.testimonios { display:grid; gap:.75rem; }
+.testimonios blockquote { margin:0; background: #fff; border-left:4px solid var(--accent); padding:.75rem 1rem; border-radius:8px; color:var(--muted); box-shadow: var(--shadow-1); }
+.testimonios cite { display:block; margin-top:.5rem; font-weight:700; color:var(--text); }
+
+/* 11. ASIDE (tarjeta) */
+aside { background: var(--card); padding:1rem; border-radius:12px; box-shadow: var(--shadow-1); margin-top: .5rem; }
+aside h2 { margin-top:0; color:var(--primary); }
+aside p, aside a { color:var(--muted); font-size:.95rem; }
+aside ul { padding-left: 1rem; margin: .5rem 0 0 0; color:var(--muted); }
+
+/* 12. FOOTER */
+footer { margin-top: 1.5rem; padding:1.1rem 0; background:#f7f4f2; color:var(--muted); text-align:center; }
+footer p { margin:0; }
+footer nav ul { list-style:none; display:flex; gap:.75rem; justify-content:center; padding:0; margin:.6rem 0 0 0; }
+footer nav a { color:var(--muted); font-size:.95rem; }
+
+/* 13. BREAKPOINTS: tablet / escritorio */
+@media (min-width: 700px) {
+  main > .container { grid-template-columns: 2fr 1fr; align-items:start; gap:1.5rem; }
+  header .container { padding-inline: .5rem; }
+  header .nombre { font-size:1.4rem; }
+  .testimonios { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1100px) {
+  :root { --gap: 1.25rem; }
+  header .container { gap:1.25rem; }
+  header .nombre { font-size:1.6rem; }
+  .galeria { gap: 1rem; }
+}
+
+/* 14. ACCESIBILIDAD / REDUCED MOTION */
+:focus { outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* 15. PEQUEÑAS ANIMACIONES (opcionales, suaves) */
+.galeria figure { transition: transform .18s ease, box-shadow .18s ease; }
+.galeria figure:focus-within, .galeria figure:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+
+/* 16. HELPERS */
+.hidden { display:none !important; }
+.text-center { text-align:center; }
+.visually-hidden { position: absolute !important; left:-9999px !important; top:auto !important; width:1px !important; height:1px !important; overflow:hidden !important; }
+
+/* END OF CSS */

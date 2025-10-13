@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content1 {
+  width: 340px; 
+  margin: 40px auto;
+  font-size: 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border: 3px solid black;
+  margin: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.content2{
+    width: 320px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+}

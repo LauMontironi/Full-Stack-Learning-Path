@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    justify-content: center;
+    place-items: center;
+    
+}
+
+
+.box{
+    border: 3px solid black;
+
+}
+
+.uno{
+    background-color: lightblue;
+    padding: 10px;
+    margin: auto;
+   
+
+}
+.dos{
+    background-color: lightgreen;
+    padding: 30px;
+    margin: auto;
+}
+.tres{
+    background-color: lightpink;
+    margin: 10px;
+    padding: 30px;
+}
+.cuatro{
+    background-color: lightyellow;
+    margin: 80px;
+    padding: 35px;
+}

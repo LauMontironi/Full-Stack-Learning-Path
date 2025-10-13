@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content1{
+            background: #5ddec4;
+            background: linear-gradient(90deg, rgba(93, 222, 196, 1) 0%, rgba(87, 199, 133, 1) 50%, rgb(109, 156, 250) 100%);
+            
+            background-size: cover;
+          
+        }
+        .titulo{
+            font-family: "Dancing Script", cursive;        
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .content2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #ffffff9f;
+        }
+        .content2 a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+        .nav-links{
+            display: flex;
+            gap: 20px;
+            transition-duration: 3s;
+            
+        }
+        .nav-links a:hover{
+            text-decoration: underline;
+
+        }
+        .titulo2{
+            font-family:'Montserrat', sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+        }
+        body{
+            background-color: #d7fbf4;
+        }
+        p{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 30px;
+        }
+        .format1{
+            border: 3px solid lightblue;
+            border-radius: 10px;
+            background-color: #ffffffcc;
+            padding: 20px;
+            width: 300px;
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+        }
+        .content3{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+        }
+        .estilo{
+            font-family: 'Montserrat';
+            color: #7d0c0c;
+            justify-content: center;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            
+        }
+        .flex input,
+        .flex textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Montserrat';
+        }
+        footer{
+            background-color: #222;
+            color: white;
+            font-family: 'Montserrat';
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid #5ddec4;
+        }
+        footer h2 {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #88e6d7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .imagen{
+            background-image: url(./montana.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+        }
+        ol {
+             padding-left: 20px; 
+             margin-left: 0;
+}
+     
+
+        
+       
+
+
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<header>
+    <div class="content1">
+        <h1 class="titulo"><em>Explorando la Naturaleza</em></h1>
+    </div>
+    <div class="content2">
+        <img width="35px" class="flex-end"src="./forest-path-svgrepo-com.svg" alt="imagen de pinos y montañas">
+        <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#acerca-de">Acerca de</a>
+        </div>
+
+    </div>
+</header>
+
+<body>
+    <main>
+    <section class="section1">
+        <h2 class="titulo2">Bienvenidos a nuestro rincón natural </h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ull.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ull.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ull.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ull.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ull..</p>
+        <div class="imagen">
+        
+        </div>
+    </section>
+    <section>
+        <div class="content3">
+        <div class="format1 estilo">
+            <h3>Top 5 Actividades al aire Libre</h3>
+            <br>
+            <ol>
+                <li>Cabalgata</li>
+                <li>Rafting</li>
+                <li>Senderismo</li>
+                <li>Yoga</li>
+                <li>Meditacion Guiada</li>
+            </ol>
+            <br>
+            <span>Mas info <a href="#aqui">aqui</a></span>
+           
+        </div>
+        <div class="format1 estilo">
+            <h3>Formulario de contacto</h3>
+            <form class="flex">
+                <label for="name">Nombre y Apellido</label>
+                <input id="name"type="text" minlength="8" required>
+                <label id="email"for="email">Email</label>
+                <input id="email"type="email" required placeholder="abc@abc">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="">escribe tu mensaje aqui</textarea>
+                <input type="submit">
+            </form>
+            
+           
+        </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <h2>Gracias por tu visita</h2>
+    © 2025 Rincon Natural- Todos los derechos reservados.
+    <br>
+    <a href="#">Explora las paginas de nuestro grupo</a> 
+</footer>
+</body>
+</html>

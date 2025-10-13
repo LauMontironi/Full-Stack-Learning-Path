@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 200px;
+            height: 250px;
+            background-color: blue;
+            border: 2px solid black;
+            display: flex;
+            
+          
+        }
+
+        .laptop{
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .overlay:hover *{
+            opacity: 0.5;
+            transition: 0.2s ease-in;
+
+        }
+        .overlay:hover .enlaceGit {
+                 opacity: 1;
+        }
+
+        .link:hover{
+            background-color: white;
+            color: black;
+            outline: 2px solid black;
+        }
+
+        .text{
+            color: white;
+          
+            
+
+        }
+        .overlay{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           align-items: center;
+            opacity: 1;
+            transition: 0.2s ease-in;
+          
+         
+        }
+
+    
+
+        
+        .link{
+            color: white;
+            background-color: black;
+            border-radius: 999px;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            opacity: 1;
+            transition: 0.2s ease-in;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="overlay">
+            <img class="laptop"src="./assets/Proyecto 1.avif" alt="">
+            <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            <a class="link"href="#">Go to Git</a>
+        </div>
+    </div>
+</body>
+</html>
