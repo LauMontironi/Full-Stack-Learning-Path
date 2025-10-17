@@ -7,3 +7,8 @@
     --color_oscuro: #21242e;
 }
 
+:root {
+    --color_rojo: #fa573a;
+    --color-casiNegro: #21242e;
+    --max-width-desktop: 1200px;
+}
